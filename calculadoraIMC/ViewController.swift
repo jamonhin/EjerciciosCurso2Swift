@@ -8,7 +8,8 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+// Para desactivar el teclado una vez ha sido utilizado se usan los delegados
+class ViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var peso: UITextField!
     @IBOutlet weak var estatura: UITextField!
@@ -16,6 +17,25 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        //Inicializacion de los componentes hacia su delegado
+        peso.delegate=self
+        estatura.delegate=self // el objeto delegado es el mismo
+    }
+    
+    //Esta funcion debe ser llamada desde el evento did End on exit para cada textfield que necesite desactivar el teclado
+    @IBAction func textFieldDoneEditing(sender:UITextField){
+    
+        sender.resignFirstResponder() //Desaparece el teclado
+    }
+    /*
+    //funcion que se utiliza para que cuando se de tap a otra parte de la pantalla se desactive el teclado
+    //Para utilizar esta funcion debemos cambiar el tipo de vista a UIControl en la parte de abajo a la izquierda señalamos view y vamos a las propiedades en el cuadro identity inspector y cambiamos la clase por UIControl asi nos habilita los eventos que necesitamos el cual es  Touch down
+     */
+    @IBAction func backgroundTap(sender:UITextField){
+        // como no se cual teclado esta activo en cual control desactivo los dos
+        peso.resignFirstResponder()
+        estatura.resignFirstResponder()
     }
 
     override func didReceiveMemoryWarning() {
