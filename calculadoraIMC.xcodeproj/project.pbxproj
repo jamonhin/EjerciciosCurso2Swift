@@ -47,6 +47,7 @@
 		CEC0BFC41CA75B2100CD5DA5 /* calculadoraIMCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = calculadoraIMCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC0BFC81CA75B2100CD5DA5 /* calculadoraIMCUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calculadoraIMCUITests.swift; sourceTree = "<group>"; };
 		CEC0BFCA1CA75B2100CD5DA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEC9307A1CA76B7300EA44FC /* MyFirstPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyFirstPlayground.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +104,7 @@
 				CEC0BFAF1CA75B2000CD5DA5 /* Assets.xcassets */,
 				CEC0BFB11CA75B2100CD5DA5 /* LaunchScreen.storyboard */,
 				CEC0BFB41CA75B2100CD5DA5 /* Info.plist */,
+				CEC9307A1CA76B7300EA44FC /* MyFirstPlayground.playground */,
 			);
 			path = calculadoraIMC;
 			sourceTree = "<group>";
@@ -484,6 +486,7 @@
 				CEC0BFCF1CA75B2100CD5DA5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CEC0BFD01CA75B2100CD5DA5 /* Build configuration list for PBXNativeTarget "calculadoraIMCTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +495,7 @@
 				CEC0BFD21CA75B2100CD5DA5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CEC0BFD31CA75B2100CD5DA5 /* Build configuration list for PBXNativeTarget "calculadoraIMCUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +504,7 @@
 				CEC0BFD51CA75B2100CD5DA5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
